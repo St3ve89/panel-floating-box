@@ -17,6 +17,11 @@
     padding: 5px 10px;
     border-radius: $border-radius;
     color: $color-white;
+
+    &:focus {
+        background-color: $color-white;
+        color: $cinnabar;
+    }
 }
 
 .panel__image {
