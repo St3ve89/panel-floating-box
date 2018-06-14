@@ -1,0 +1,47 @@
+.panel {
+    display: flex;
+    background: linear-gradient(to right, $pickled-bluewood, $san-marino);
+    border-radius: $border-radius;
+    padding: 10px 20px;
+    color: $color-white;
+}
+
+.panel__column:nth-child(2) {
+    width: 460px;
+}
+
+.panel__button {
+    background-color: $cinnabar;
+    border: 0;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: $border-radius;
+    color: $color-white;
+}
+
+.panel__image {
+    height: 300px;
+    width: 460px;
+    background-color: $silver-chalice;
+    border-radius: $border-radius;
+
+    &:before, 
+    &:after {
+        content:"";
+        position: absolute;
+        top: 164px;
+        left: 554px;
+        width: 440px;
+        height: 1px;
+        transform: skewY(32deg);
+        background-color: $color-white;
+    }
+
+    &:before {
+        transform: skewY(-32deg);
+    }
+}
+
+.panel__image-wrapper{
+    background: $color-white;
+}
