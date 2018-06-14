@@ -2,8 +2,30 @@
     .panel__column
         h1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, perspiciatis.
         p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum ducimus earum quod ipsa reprehenderit pariatur porro commodi excepturi alias quis, voluptates odio aut, est tenetur, similique cum tempore odit doloribus.
-        button.panel__button have a look
+        //- button.panel__button have a look
     .panel__column
         .panel__image-wrapper
             .panel__image
+script.
+    const getText = number => {
+        if(number === 0){
+            return "have a look";
+        }else if(number === 1){
+            return "1 click";
+        }else{
+            return `${number} clicks`;
+        }
+    }
+    let numberOfClicks = 0;
+    const firstPanelColumn = document.querySelector(".panel__column");
+    const panelButton = document.createElement("button");
+    panelButton.className = "panel__button";
+    panelButton.innerText = getText(numberOfClicks);
+    panelButton.addEventListener('click', () => {
+        numberOfClicks++
+        panelButton.innerText = getText(numberOfClicks);
+    });
+    firstPanelColumn.appendChild(panelButton);
+    
+    console.log(firstPanelColumn)
 
