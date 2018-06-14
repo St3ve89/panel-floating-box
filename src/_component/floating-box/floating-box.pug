@@ -1,0 +1,35 @@
+-
+    const squareButtonList = [
+        {
+            label: "new project",
+            icon: "asfdvf"
+        },
+        {
+            label: "open project",
+            icon: "asfdvf"
+        },
+        {
+            label: "import project",
+            icon: "asfdvf"
+        },
+    ]
+    const longButtonList = [
+        {
+            label: "create outstanding AR experiences with our easy-to-follow tutorials.",
+            icon: "asfdvf"
+        },
+        {
+            label: "what's new with Studio.",
+            icon: "asfdvf"
+        },
+    ]
+
+.floating-box
+    .floating-box__square-button-wrapper
+        each squareButton in squareButtonList
+            include ../floating-box-square-button/floating-box-square-button
+
+    hr.floating-box__hr
+    .floating-box__long-button-wrapper
+        each longButton in longButtonList
+            include ../floating-box-long-button/floating-box-long-button

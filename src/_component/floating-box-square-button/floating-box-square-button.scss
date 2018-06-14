@@ -1,0 +1,14 @@
+.floating-box-square-button {
+    display: flex;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 12px;
+    height: 106px;
+    width: 123px;
+    border-radius: $border-radius;
+    border: 1px solid $color-white;
+    justify-content: center;
+    align-items: space-around;
+    background: $boulder;
+    flex-wrap: wrap;
+}

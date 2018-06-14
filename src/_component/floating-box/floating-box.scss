@@ -1,0 +1,19 @@
+.floating-box {
+    padding: 46px 84px;
+    border: 1px solid $dusty-gray;
+    background: $emperor;
+    border-radius: $border-radius;
+    margin: 1rem auto;
+}
+
+.floating-box__hr {
+    margin-top: 46px;
+    margin-bottom: 32px;
+    border: 0;
+    border-top: 1px solid $dusty-gray; 
+}
+
+.floating-box__square-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
