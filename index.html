@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Panel</title><link rel="stylesheet" href="style.css"></head><body><div class="panel"><div class="panel__column"><h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, perspiciatis.</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum ducimus earum quod ipsa reprehenderit pariatur porro commodi excepturi alias quis, voluptates odio aut, est tenetur, similique cum tempore odit doloribus.</p></div><div class="panel__column"><div class="panel__image-wrapper"><div class="panel__image"></div></div></div></div><script>const getText = number => {
+    if(number === 0){
+        return "have a look";
+    }else if(number === 1){
+        return "1 click";
+    }else{
+        return `${number} clicks`;
+    }
+}
+let numberOfClicks = 0;
+const firstPanelColumn = document.querySelector(".panel__column");
+const panelButton = document.createElement("button");
+panelButton.className = "panel__button";
+panelButton.innerText = getText(numberOfClicks);
+panelButton.addEventListener('click', () => {
+    numberOfClicks++
+    panelButton.innerText = getText(numberOfClicks);
+});
+firstPanelColumn.appendChild(panelButton);
+
+console.log(firstPanelColumn)</script></body></html>
