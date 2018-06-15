@@ -1,0 +1,24 @@
+{
+  "squareButtonList": [{
+      "label": "new project",
+      "icon": "pfb-plus"
+    },
+    {
+      "label": "open project",
+      "icon": "pfb-folder-open"
+    },
+    {
+      "label": "import project",
+      "icon": "pfb-download2"
+    }
+  ],
+  "longButtonList": [{
+      "label": "create outstanding AR experiences with our easy-to-follow tutorials.",
+      "icon": "pfb-book"
+    },
+    {
+      "label": "what's new with Studio.",
+      "icon": "pfb-gift"
+    }
+  ]
+}
