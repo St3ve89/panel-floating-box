@@ -6,17 +6,25 @@
     color: $color-white;
 }
 
-.panel__column:nth-child(2) {
-    width: 460px;
+.panel__column{
+    padding: 0.5rem;
+    &:nth-child(2) {
+        width: 460px;
+    }
+}
+
+.panel__p {
+    margin: 1rem 0;
 }
 
 .panel__button {
     background-color: $cinnabar;
     border: 0;
     text-transform: uppercase;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: $border-radius;
     color: $color-white;
+    margin: 1rem 0;
 
     &:focus {
         background-color: $color-white;

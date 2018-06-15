@@ -4,6 +4,10 @@
     background: $emperor;
     border-radius: $border-radius;
     margin: 1rem auto;
+    width: 626px;
+    height: 384px;
+
+    @extend %box-shadow;
 }
 
 .floating-box__hr {

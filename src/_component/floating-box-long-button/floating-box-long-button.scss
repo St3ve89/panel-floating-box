@@ -8,8 +8,19 @@
     border-radius: $border-radius;
     border: 1px solid $dusty-gray;
     margin: 0 auto 21px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background: $boulder;
     flex-wrap: wrap;
+
+    @extend %box-shadow;
+}
+
+.floating-box__long-icon{
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.floating-box__long-label::first-letter{
+    text-transform: capitalize;
 }
