@@ -2,7 +2,6 @@
     display: flex;
     font-size: 13px;
     color: $color-white;
-    // text-transform: uppercase;
     height: 42px;
     width: 455px;
     border-radius: $border-radius;
@@ -12,6 +11,7 @@
     align-items: center;
     background: $boulder;
     flex-wrap: wrap;
+    cursor: pointer;
 
     @extend %box-shadow;
 }
