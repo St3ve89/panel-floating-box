@@ -3,7 +3,8 @@
     background: linear-gradient(to right, $pickled-bluewood, $san-marino);
     border-radius: $border-radius;
     padding: 10px 20px;
-    color: $color-white;
+    color: $athens-gray;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .panel__column{
@@ -15,6 +16,10 @@
 
 .panel__p {
     margin: 1rem 0;
+}
+
+h1 {
+    font-weight: normal;
 }
 
 .panel__button {
